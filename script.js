@@ -25,3 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
   
     window.addEventListener("scroll", highlightNav);
   });
+
+function dropDown(e){
+  document.querySelector(".menu svg").classList.toggle("highlight");
+  document.querySelectorAll(".nav-item").forEach(o=>{o.classList.toggle("visible")});
+}
+
+document.querySelector(".menu").addEventListener("click",dropDown);
