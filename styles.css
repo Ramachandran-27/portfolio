@@ -89,7 +89,7 @@ img{
 color:rgba(255, 219, 112, 0.8);
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
     .nav-item{
         display:none;
     }
@@ -106,7 +106,7 @@ color:rgba(255, 219, 112, 0.8);
         text-align:center;
     }
 }
-@media screen and (min-width:600px){
+@media screen and (min-width:800px){
     .nav-item{
         display:inline-block;
     }
