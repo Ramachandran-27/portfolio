@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    font-family:"Poppins";
+}
+
+
+body{
+    background-color:#121212;
+    color:rgba(255, 255, 255, 0.764);
+    padding:0px;
+    margin:0px;
+}
+
+.navbar {
+    box-shadow: 1 25px 30px #2b2b2cf9;
+    box-sizing: border-box;
+    background:#282829e4;
+    position:fixed;
+    top: 0px;
+    border-radius:0px 0px 15px 15px;
+    width:100%;
+    padding:0px 10px;
+    min-height:40px;
+    display:flex;
+    gap:30px;
+    flex-flow:row nowrap;
+    z-index:1;
+    justify-content: space-between;
+    align-items:center;
+}
+.menubar{
+    display:flex;
+    flex-direction:row;
+    min-width:50%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+nav h2{
+    font-family:'Times New Roman', Times, serif;
+    font-weight:10%;
+    margin:0px;
+}
+nav a:active,a:hover{
+color:#FFDB70;
+}
+
+.navbar a{
+    color:white;
+    height:fit-content;
+    text-decoration: none;
+}
+.navbar a:active{
+    color:rgb(255, 157, 0);
+}
+img{
+    display:block;
+    width:75%;
+    aspect-ratio: 12 / 7;
+    min-height: 200px;
+    max-height:350px;
+    margin:0px auto;
+    object-fit:cover;
+    opacity:0.75;
+    fill:#1212121a;
+    border-radius:25px;
+}
+.active{
+    color:#FFDB70 !important;
+    border-bottom: 1px solid #FFDB70;
+}
+
+.nav-item a{
+    padding:10px;
+    height:inherit;
+    width:inherit;
+}
+.menu{
+    background-color: inherit;
+    color:#FFDB70;
+    border:0px;
+}
+.intro h3{
+    margin:0;
+    padding:0;
+}
+.menu:hover{
+color:rgba(255, 219, 112, 0.8);
+}
+
+@media screen and (max-width:800px){
+    .nav-item{
+        display:none;
+    }
+    .menu{
+        display:inline-block;
+    }
+    .navbar{
+        flex-direction: column;
+        padding:5px 10px 5px 10px;
+        height:fit-content;
+    }
+    .navbar > *{
+        width:100%;
+        text-align:center;
+    }
+}
+@media screen and (min-width:800px){
+    .nav-item{
+        display:inline-block;
+    }
+    .menu{
+        display:none;
+    }
+    .navbar{
+        flex-direction: row;
+    }
+}
+.visible{
+    display:inline-block;
+}
+.highlight{
+     fill:#FFDB70;
+}
+
+
+section {
+    border-radius:10px;
+    margin:30px auto;
+    background:#1e1e1f;
+    width:85%;
+    height:fit-content;
+    min-height: 200px;
+    padding:40px 20px;
+}
+section > h2{
+    margin:0px auto;
+    font-weight: 500;
+}
+.title{
+    border-bottom:2px solid #FFDB70;
+    border-radius:2px;
+}
+a:hover{
+    color:#FFDB70;
+}
+
+
+
+
+.name{
+    color:#FFDB70;
+    font-family:"Poppins";
+    font-weight:500;
+    display:inline-block;
+    height:inherit;
+}
+#intro .name{
+    font-size:35px;
+}
+#about .name{
+    font-size:19px;
+}
+nav .name:hover, nav .name:active{
+color:rgba(255, 219, 112,0.75);
+}
+#intro{
+    margin-top:100px;
+    padding:15px 15px;
+    height:fit-content;
+}
+#content{
+    width:90%;
+    padding-bottom:5px;
+    margin:0px auto;
+}
+.desc{
+    margin-top:5px;
+    font-family:"Poppins";
+    font-weight:549;
+    font-size:18px;
+}
+.container{
+    width:90%;
+    display:flex;
+    gap:25px;
+    margin:15px auto;
+    flex-flow: row wrap;
+}
+.container a{
+    background-color:#121212;
+    border-radius:50%;
+    padding:5px 5px 0px 5px;
+}
+.container a svg{
+    margin:0px;
+    padding:0px;
+    height:25px;
+    width:25px;
+    color:white;
+}
+.container svg:hover{
+    color:#FFDB70;
+}
+
+
+
+
+
+form{
+    width:60%;
+    margin:50px auto;
+    max-width: 400px;
+}
+h2{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:30px;
+}
+#contact{
+    height:fit-content;
+    margin-bottom: 50px;
+}
+input,textarea,.send{
+    padding:20px;
+    border:0px solid white;
+    border-bottom:1px solid #FFDB70;
+    width:100%;
+    border-radius:15px;
+    margin-bottom:30px;
+    font-size:18px;
+    color:white;
+    font-weight:200;
+    background-color: #252424dd;
+}
+.send:hover{
+    background-color: #FFDB70;
+    color:#121212
+}
+input{
+    height:30px;
+}
+textarea{
+    height:100px;
+}
+.send{
+    padding:10px;
+    margin:0px auto;
+    color:#FFDB70;
+}
+
+
+p{
+    padding:10px;
+    line-height: 30px;
+    text-align: left;
+}
+
+
+.flexbox{
+    width:100%;
+    margin:10px auto 40px auto;
+}
+
+.flex-items{
+    padding:2px;
+    background-color: #252424dd;
+    height:fit-content;
+    min-width:90px;
+    flex:1 1 calc(25%-25px);
+    max-width:700px;
+    display:flex;
+    flex-flow:column;
+    border-radius:10%;
+}
+.flex-items > *{
+    margin:0px auto;
+}
+.flex-items svg{
+    width:70px !important;
+    height:70px !important;
+}
